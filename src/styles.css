@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200&display=swap');
 * {
     
     margin: 0;
@@ -12,10 +12,14 @@ html{
     scroll-behavior: smooth;
   }
 
+
 body {
     margin: auto;
     background: rgb(34,94,195);
     background: linear-gradient(0deg, rgba(34,94,195,0.9440860215053763) 0%, rgba(209,206,199,1) 100%);    
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
 }
 
 
@@ -32,11 +36,4 @@ body {
     float: right;
 }
 
-/* h1 h2 h3 p{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    color: rgb(247, 246, 250)
-} */
 
