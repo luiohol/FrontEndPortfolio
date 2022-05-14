@@ -1,0 +1,52 @@
+/* Akills Habilidades*/
+
+.section-title h2 {
+    text-decoration: underline rgb(2, 14, 36);
+    text-underline-offset: 25%;
+}
+
+.section-title p {
+    justify-content: center;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* ICONOS */
+
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+}
+
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+    color: #000000;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.line-mf {
+    width: 80px;
+    height: 2px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}

@@ -1,0 +1,54 @@
+/* Social */
+
+.social {
+    margin: 10px;
+    transform: translateX(1.5em);
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline rgb(2, 14, 36);
+    text-underline-offset: 25%;
+}
+
+/* link centrados */
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+    color: #000000c7;
+}
+
+/* Tamaño icono */
+.links a i {
+    font-size: 3rem;
+}
+
+
+/* Flecha Arriba */
+
+.up {
+    height: 30px;
+    width: 50px;
+    position: fixed;
+    background: rgba(82, 56, 143, 0.397);
+    text-decoration: none;
+    text-align: center;
+    line-height: 1px;
+    color: width;
+    color: black;
+    font-size: 30px;
+    border-radius: 25%;
+    right: 50px;
+    margin-bottom: -100px;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+}

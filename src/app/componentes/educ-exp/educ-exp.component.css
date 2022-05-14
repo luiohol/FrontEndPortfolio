@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# EDUCACIÓN Y EXPERIENCIA
+--------------------------------------------------------------*/
+.edu {
+    margin-bottom: 40px;
+}
+
+.edu .edu-title {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #050d18;
+    text-decoration: underline rgb(2, 14, 36);
+    text-underline-offset: 25%;
+}
+
+.edu .edu-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #000000;
+    position: relative;
+}
+
+.edu .edu-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.edu .edu-item h5 {
+    font-size: 16px;
+    background: #afa58f6b;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.edu .edu-item ul {
+    padding-left: 20px;
+}
+
+.edu .edu-item ul li {
+    padding-bottom: 10px;
+}
+
+.edu .edu-item:last-child {
+    padding-bottom: 0;
+}
+
+.edu .edu-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: rgb(168, 164, 164);
+    border: 2px solid #05234d;
+}

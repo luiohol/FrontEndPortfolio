@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Boton Arriba config */
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: auto;
+    background: rgb(34,94,195);
+    background: linear-gradient(0deg, rgba(34,94,195,0.9440860215053763) 0%, rgba(209,206,199,1) 100%);    
+}
+
+
+/*  iconos para editar */
+.titulo i {
+    width: 20px;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.icon-pull-right {
+    float: right;
+}
+
+/* h1 h2 h3 p{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(247, 246, 250)
+} */
+
