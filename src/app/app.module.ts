@@ -12,7 +12,7 @@ import { SkillComponent } from './componentes/skill/skill.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-
+import {HttpClientModule } from '@angular/common/http';
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
@@ -35,9 +35,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot({
       // set defaults here
+    }),
+    HttpClientModule,
     
-      
-    })
   ],
   providers: [],
   bootstrap: [AppComponent]
