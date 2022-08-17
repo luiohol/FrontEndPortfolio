@@ -19,6 +19,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { interceptorProvider} from './service/interceptor-service';
 
 
 @NgModule({
@@ -51,7 +52,7 @@ import { FormsModule } from '@angular/forms';
     
   ],
   providers: [
-    
+    interceptorProvider
   ],
   bootstrap: [AppComponent]
 })
