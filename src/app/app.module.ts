@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
@@ -13,8 +12,14 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import {HttpClientModule } from '@angular/common/http';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     SkillComponent,
     ProyectosComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    EducacionComponent,
+    ExperienciaComponent,
+    HomeComponent,
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -37,9 +47,12 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       // set defaults here
     }),
     HttpClientModule,
+    FormsModule,
     
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
