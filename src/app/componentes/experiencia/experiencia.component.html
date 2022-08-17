@@ -2,31 +2,45 @@
     <div class="container">
         <div class="col-lg-11" data-aos="fade-up" data-aos-delay="100">
             <h3 class="edu-title">Experiencia</h3>
-            <div class="edu-item">
-                <h4>Redes</h4>
-                <h5>2013 - 2022</h5>
+            <div class="edu-item" *ngFor="let Experiencia of expe">
+                <h4>{{Experiencia.nombreE}}</h4>
+                <!-- <h5>2013 - 2022</h5> -->
                 <p><em>----------------</em></p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</li>
+                    <li>{{Experiencia.descripcionE}}</li>
                     <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
                     <li>Lorem ipsum dolor sit amet consectetur.</li>
                     <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias excepturi soluta odit.</li>
                 </ul>
             </div>
-            <div class="edu-item">
-                <h4>Lorem, ipsum dolor.</h4>
-                <h5>2006 - 2013</h5>
+            
+            <div class="edu-item" *ngFor="let Experiencia of expe">
+                <h4>{{Experiencia.nombreE}}</h4>
+                <!-- <h5>2006 - 2013</h5> -->
                 <p><em>...................................</em></p>
                 <ul>
-                    <li>Lorem ipsum dolor sit.</li>
+                    <li>{{Experiencia.descripcionE}}</li>
                     <li>Lorem, ipsum dolor.</li>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque?</li>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
                 </ul>
             </div>
-            <i class="fa fa-pen"></i>
-            <i class="fa fa-times"></i>
+            <div class="boton">
+                <i class="fa fa-plus-circle" routerLink="/nuevaexp" *ngIf="!isLogged"></i>
+            </div>
+            <!-- MODIFICAR routerLink="/editexp/{{Experiencia.id}} -->
+            <div class="boton" >
+                <i class="fa fa-pen" routerLink="/editexp" *ngIf="!isLogged"></i>
+            </div> 
+
+            <div class="boton">
+                <!-- MODIFICAR "delete(Experiencia.id) -->
+                <i class="fa fa-times" (click)="delete()" *ngIf="!isLogged"></i>
+            </div>
+            
         </div>
+        
+        
     </div>
     
 
