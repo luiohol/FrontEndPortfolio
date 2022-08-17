@@ -6,7 +6,6 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutComponent } from './componentes/about/about.component';
-import { EducExpComponent } from './componentes/educ-exp/educ-exp.component';
 import { SkillComponent } from './componentes/skill/skill.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
@@ -28,7 +27,6 @@ import { interceptorProvider} from './service/interceptor-service';
     NavbarComponent,
     BannerComponent,
     AboutComponent,
-    EducExpComponent,
     SkillComponent,
     ProyectosComponent,
     ContactoComponent,
