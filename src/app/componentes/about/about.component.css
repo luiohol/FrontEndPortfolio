@@ -21,9 +21,13 @@
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
+    
 }
 
-
+.persona{
+    font-weight: bold;
+    font-size: 20px;
+}
 .boton{
     justify-content: space-between;
     cursor: pointer;

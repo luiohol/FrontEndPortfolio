@@ -26,16 +26,16 @@
                 </ul>
             </div>
             <div class="boton">
-                <i class="fa fa-plus-circle" routerLink="/nuevaexp" *ngIf="!isLogged"></i>
+                <i class="fa fa-plus-circle" routerLink="/nuevaexp" *ngIf="isLogged"></i>
             </div>
             <!-- MODIFICAR routerLink="/editexp/{{Experiencia.id}} -->
             <div class="boton" >
-                <i class="fa fa-pen" routerLink="/editexp" *ngIf="!isLogged"></i>
+                <i class="fa fa-pen" routerLink="/editexp" *ngIf="isLogged"></i>
             </div> 
 
             <div class="boton">
                 <!-- MODIFICAR "delete(Experiencia.id) -->
-                <i class="fa fa-times" (click)="delete()" *ngIf="!isLogged"></i>
+                <i class="fa fa-times" (click)="delete()" *ngIf="isLogged"></i>
             </div>
             
         </div>
