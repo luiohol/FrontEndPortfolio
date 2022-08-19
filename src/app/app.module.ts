@@ -6,7 +6,6 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutComponent } from './componentes/about/about.component';
-import { EducExpComponent } from './componentes/educ-exp/educ-exp.component';
 import { SkillComponent } from './componentes/skill/skill.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
@@ -19,6 +18,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { interceptorProvider} from './service/interceptor-service';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
+import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
 
 
 @NgModule({
@@ -27,7 +31,6 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     BannerComponent,
     AboutComponent,
-    EducExpComponent,
     SkillComponent,
     ProyectosComponent,
     ContactoComponent,
@@ -36,6 +39,10 @@ import { FormsModule } from '@angular/forms';
     ExperienciaComponent,
     HomeComponent,
     LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
     
   ],
   imports: [
@@ -51,7 +58,7 @@ import { FormsModule } from '@angular/forms';
     
   ],
   providers: [
-    
+    interceptorProvider
   ],
   bootstrap: [AppComponent]
 })
