@@ -5,17 +5,17 @@
                 <h3 class="edu-title">Educación</h3>
                 <div class="edu-item" *ngFor="let Educacion of educacion">
                     <div class="boton">
-                        <i class="fa fa-times" (click)="delete(Educacion.id)"*ngIf="isLogged">Eliminar</i>
+                        <i class="fa fa-times" (click)="delete(Educacion.id)"*ngIf="isLogged"> Eliminar</i>
                     </div>
                     <div class="boton">
-                        <i class="fa fa-pen" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged">Edit</i>
+                        <i class="fa fa-pen" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"> Edit</i>
                     </div> 
                     <h4>{{Educacion.nombreE}}</h4>
                     <!-- <h5>2017 - 2018</h5> -->
                     <p><em>{{Educacion.descripcionE}}</em></p>
                 </div>
                 <div class="boton">
-                    <i class="fa fa-plus-circle" routerLink="/nuevaedu" *ngIf="isLogged">Nueva</i>
+                    <i class="fa fa-plus-circle" routerLink="/nuevaedu" *ngIf="isLogged"> Nueva</i>
                 </div>
 
             </div>
