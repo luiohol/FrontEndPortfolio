@@ -32,11 +32,8 @@
                 </li>
                 
                 <li class="navbar-text">
-                    <a class="nav-link fs-4" href="/login"><i class='fas fa-user-lock' *ngIf="!isLogged"></i></a>
-                    <a class="nav-link fs-4" href="/home"><i class='fas fa-user-unlock' *ngIf="isLogged"></i></a>
-
-                    <!-- <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-                    <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button> -->
+                    <a class="nav-link fs-4" (click)="login()" href="/login"><i class='fas fa-user-lock' *ngIf="!isLogged"></i></a>
+                    <a class="nav-link fs-4" (click)="onLogOut()"href="/"><i class='fas fa-user unlock' *ngIf="isLogged"></i></a>
                 <li>
             </ul>
 
