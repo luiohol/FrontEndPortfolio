@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <h1>Agregar Skill</h1>
+        </div>
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreS">Nombre</label>
+                    <input type="text" class="form-control" id="nombreS" name="nombreS" [(ngModel)]="nombreS" required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeS">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentajeS" name="porcentajeS" [(ngModel)]="porcentajeS" required>
+                </div>
+                <div class="form-group">
+                    <label for="radioS">Radio</label>
+                    <input type="text" class="form-control" id="radioSS" name="radioSS" [(ngModel)]="radioS">
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-info btn-sm">
+                        Agregar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
