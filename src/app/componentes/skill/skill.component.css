@@ -3,6 +3,8 @@
 .section-title h2 {
     text-decoration: underline rgb(2, 14, 36);
     text-underline-offset: 25%;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .section-title p {
@@ -50,3 +52,14 @@
     background-color: #0078ff;
     margin: 0 auto;
 }
+
+.boton{
+    justify-content: space-between;
+    cursor: pointer;
+    
+    border-radius: 6px;
+        
+}
+/* .barra{
+    display: flex;
+} */
