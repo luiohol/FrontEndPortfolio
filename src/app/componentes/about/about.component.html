@@ -1,13 +1,13 @@
 <section id="about" class="about">
     <div class="container">
-        <div class="titulo">
+        <div class="titulo" >
             <h2>Sobre mí</h2>
             <p id="nombre" class="persona">{{persona.nombre}} {{persona.apellido}}</p>
             <p><em>Full Stack Developer Jr</em>
-            <p><em>Con diez años de experiencia en soporte técnico en TI y quince años en comercio.
-                Siempre dispuesto a resolver problemas y ayudar a otros para lograr un mejor desempeño. Me
-                apasionan las nuevas tecnologías y siempre estoy dispuesto a capacitarme para mejorar mis
-                habilidades.</em></p>
+                <div class="boton" *ngFor="let Descripcion of descripcion">
+                    <p><em>{{Descripcion.descripcion}}</em></p>
+                    <i class="fa fa-pen" routerLink="/editdescp/{{Descripcion.id}}" *ngIf="isLogged"></i>
+                </div>        
         </div>
         <hr>
     </div>

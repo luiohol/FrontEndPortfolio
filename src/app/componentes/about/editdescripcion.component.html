@@ -1,0 +1,24 @@
+<div class="container" *ngIf="descripcion">
+    <div class="row">
+        <div>
+            <h1>Editar</h1>
+        </div>
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <div>
+                        <textarea rows="5" cols="70" id="descripcion" name="descripcion"[(ngModel)]="descripcion.descripcion" required>  
+                        </textarea>
+                    </div>          
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-info btn-sm">
+                        Edit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
