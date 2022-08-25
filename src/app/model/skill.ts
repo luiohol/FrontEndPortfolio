@@ -5,9 +5,9 @@ export class Skill {
     radioS: string;
 
     constructor(nombreS: string, porcentajeS: string, radioS: string){
-        this.nombreS = this.nombreS;
+        this.nombreS = nombreS;
         this.porcentajeS = porcentajeS;
-        this.radioS = this.radioS;
+        this.radioS = radioS;
     }
 }
 

@@ -20,6 +20,7 @@
 
 
 .skills .progress {
+    
     height: 60px;
     display: block;
     background: none;
@@ -27,6 +28,7 @@
 }
 
 .skills .progress .skill {
+    
     padding: 0;
     margin: 0 0 6px 0;
     display: block;
@@ -46,6 +48,11 @@
     text-transform: uppercase;
 }
 
+
+.barra{
+    width: 100%;
+  max-width: 600px;
+}
 .line-mf {
     width: 80px;
     height: 2px;
@@ -56,10 +63,6 @@
 .boton{
     justify-content: space-between;
     cursor: pointer;
-    
     border-radius: 6px;
         
 }
-/* .barra{
-    display: flex;
-} */

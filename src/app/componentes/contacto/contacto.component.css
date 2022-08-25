@@ -22,12 +22,23 @@
 
 .links a {
     margin: 0 30px;
-    color: #000000c7;
+    color: #410cd49a;
 }
 
 /* Tamaño icono */
 .links a i {
+    text-decoration: none;
+    color: rgb(42, 25, 194);
     font-size: 3rem;
+    padding: 10px 30px;
+    border: 1px;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(1, 5, 252, 0.5);
+    transform: translateY(-3px);
 }
 
 
@@ -37,7 +48,7 @@
     height: 30px;
     width: 50px;
     position: fixed;
-    background: rgba(82, 56, 143, 0.397);
+    background: rgba(255, 255, 255, 0.815);
     text-decoration: none;
     text-align: center;
     line-height: 1px;

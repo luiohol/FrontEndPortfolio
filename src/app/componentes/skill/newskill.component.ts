@@ -9,19 +9,18 @@ import { SkillService } from 'src/app/service/skill.service';
   styleUrls: ['./newskill.component.css']
 })
 export class NewskillComponent implements OnInit {
-
-  nombreS: string;
+  nombreS: string ;
   porcentajeS: string;
   radioS : string;
   
-  constructor(private skillS: SkillService, private router: Router) { }
+  constructor(private skillService: SkillService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onCreate(): void{
     const skill = new Skill(this.nombreS, this.porcentajeS, this.radioS);
-    this.skillS.save(skill).subscribe(
+    this.skillService.save(skill).subscribe(
       data =>{
         alert("Añadida correctamente");
         this.router.navigate(['']);
