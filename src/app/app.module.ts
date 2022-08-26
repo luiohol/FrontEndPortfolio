@@ -27,6 +27,8 @@ import { EditdescripcionComponent } from './componentes/about/editdescripcion.co
 import { FormsModule } from '@angular/forms';
 import { EditskillComponent } from './componentes/skill/editskill.component';
 import { NewskillComponent } from './componentes/skill/newskill.component';
+import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
+import { EditproyectoComponent } from './componentes/proyectos/editproyecto.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { NewskillComponent } from './componentes/skill/newskill.component';
     EditdescripcionComponent,
     EditskillComponent,
     NewskillComponent,
+    NewproyectoComponent,
+    EditproyectoComponent,
     
   ],
   imports: [
