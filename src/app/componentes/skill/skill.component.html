@@ -2,56 +2,41 @@
 <section id="skills" class="skills section-bg">
     <div class="container">
         <div class="section-title">
-            <h2>Habilidades y Competencias</h2>
+            <h2>Hard & Soft Skills</h2>
         </div>
     </div>
     
     <div class="container">
         <div class="row" >
-            <div class="col-md-6">
-                <div class="progress" *ngFor="let Skill of skill">
-
-                    <div class="boton">
-                        <i class="fa fa-pen" routerLink="/editskill/{{Skill.id}}" *ngIf="isLogged"> Edit | </i>
-                              
-                        <i class="fa fa-times" (click)="delete(Skill.id)" *ngIf="isLogged">|</i>
-                    </div>
-                    <p class="skill">{{Skill.nombreS}}</p>
-                    <progress class="barra" max="100" value="{{Skill.porcentajeS}}"></progress>{{Skill.porcentajeS}}
-                </div>
+            <div class="boton">
+                <i class="fa fa-plus-circle" routerLink="/nuevaskill" *ngIf="isLogged"></i>
             </div>
-            <div class="col-md-6">
-                <div class="progressCircle">
-                    <circle-progress
-                    [percent]="95"
-                    [radius]="50"
-                    [outerStrokeWidth]="10"
-                    [innerStrokeWidth]="8"
-                    outerStrokeColor=#1700c2
-                    outerStrokeGradientStopColor=#500e86
-                    innerStrokeColor=#808080
-                    subtitleColor=#000000
-                    [animation]="true"
-                    [animationDuration]="300"
-                ></circle-progress>
-                <span class="skill">Autodidacta</span>
-                <circle-progress
-                        [percent]="90"
-                        [radius]="50"
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" *ngFor="let Skill of skill">
+                    <div class="progressCircle">
+                        <circle-progress
+                        [percent]="Skill.porcentajeS"
+                        [radius]="70"
                         [outerStrokeWidth]="10"
                         [innerStrokeWidth]="8"
-                        outerStrokeColor=#a100c2
+                        outerStrokeColor=#1700c2
                         outerStrokeGradientStopColor=#500e86
+                        [subtitle]="Skill.nombreS"
+                        [subtitleFontSize]="'16px'"
+                        [showSubtitle]="true"
                         innerStrokeColor=#808080
-                        subtitleColor=#000000
+                        subtitleColor=##db0000
                         [animation]="true"
                         [animationDuration]="300"
                     ></circle-progress>
-                    <span class="skill">Colaborativo</span>
                 </div>
-            </div>
-            <div class="boton">
-                <i class="fa fa-plus-circle" routerLink="/nuevaskill" *ngIf="isLogged"></i>
+                <div class="boton">
+                    <i class="fa fa-times" (click)="delete(Skill.id)" *ngIf="isLogged"> Eliminar</i>
+                </div>
+                <div class="boton">
+                    <i class="fa fa-pen" routerLink="/editskill/{{Skill.id}}" *ngIf="isLogged"> Edit</i>
+                </div>
+                </div>
             </div>
         </div>
 

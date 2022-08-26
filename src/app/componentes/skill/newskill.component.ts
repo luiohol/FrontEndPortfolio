@@ -10,8 +10,8 @@ import { SkillService } from 'src/app/service/skill.service';
 })
 export class NewskillComponent implements OnInit {
   nombreS: string ;
-  porcentajeS: string;
-  radioS : string;
+  porcentajeS: number ;
+  
   
   constructor(private skillService: SkillService, private router: Router) { }
 
@@ -19,7 +19,7 @@ export class NewskillComponent implements OnInit {
   }
 
   onCreate(): void{
-    const skill = new Skill(this.nombreS, this.porcentajeS, this.radioS);
+    const skill = new Skill(this.nombreS, this.porcentajeS);
     this.skillService.save(skill).subscribe(
       data =>{
         alert("Añadida correctamente");
