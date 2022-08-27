@@ -7,7 +7,7 @@ import { Descripcion } from '../model/descripcion';
   providedIn: 'root'
 })
 export class DescripcionService {
-  URL = 'http://localhost:8080/descripcion/';
+  URL = 'https://portfoliolb.herokuapp.com/descripcion/';
 
 
   constructor(private httpClient : HttpClient) { }
