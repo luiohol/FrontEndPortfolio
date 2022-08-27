@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="title-box text-center">
+                <div class="title-box">
                     <h3 id= "proyectos" class="titulo">
                         Proyectos
                     </h3>
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="boton">
-            <i class="fa fa-plus-circle" routerLink="/newproyect" *ngIf="isLogged"> Nueva</i>
+            <i class="fa fa-plus-circle" style=" color: rgb(8, 27, 133)" routerLink="/newproyect" *ngIf="isLogged"> Agregar</i>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4" >
             <div class="col"*ngFor="let proyectos of proyecto">
@@ -30,10 +30,10 @@
                     </div>
                 </div>
                 <div class="boton">
-                    <i class="fa fa-times" (click)="delete(proyectos.id)" *ngIf="isLogged"> Eliminar</i>
+                    <i class="fa fa-times"  style=" color: rgb(153, 8, 8)"(click)="delete(proyectos.id)" *ngIf="isLogged"> </i>
                 </div>
                 <div class="boton">
-                    <i class="fa fa-pen" routerLink="/editproyect/{{proyectos.id}}" *ngIf="isLogged"> Edit</i>
+                    <i class="fa fa-pen" style="color: rgb(5, 128, 11);"routerLink="/editproyect/{{proyectos.id}}" *ngIf="isLogged"> </i>
                 </div>
             </div>
         </div>

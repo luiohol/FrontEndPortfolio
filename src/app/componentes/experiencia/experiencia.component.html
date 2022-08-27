@@ -4,19 +4,20 @@
             <h3 class="edu-title">Experiencia</h3>
             <div class="edu-item" *ngFor="let Experiencia of expe">
                 <div class="boton">
-                    <i class="fa fa-times" (click)="delete(Experiencia.id)" *ngIf="isLogged"> Eliminar</i>
+                    <i class="fa fa-times" style=" color: rgb(153, 8, 8)"(click)="delete(Experiencia.id)" *ngIf="isLogged"> </i>
                 </div>
-                <div class="boton">
-                    <i class="fa fa-pen" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"> Edit</i>
-                </div>
+
                 <h4>{{Experiencia.nombreE}}</h4>
                 <ul>
                     <li><em>{{Experiencia.descripcionE}}</em></li>
 
                 </ul>
+                <div class="boton">
+                    <i class="fa fa-pen" style="color: rgb(5, 128, 11);"routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"> </i>
+                </div>
             </div>
             <div class="boton">
-                <i class="fa fa-plus-circle" routerLink="/nuevaexp" *ngIf="isLogged"> Nueva</i>
+                <i class="fa fa-plus-circle" style=" color: rgb(8, 27, 133)"routerLink="/nuevaexp" *ngIf="isLogged"> </i>
             </div>
         </div>
     </div>

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 import { TokenService } from 'src/app/service/token.service';
+import {CdkDragDrop} from '@angular/cdk/drag-drop';
+
 import Swal from 'sweetalert2';
 
 @Component({
@@ -57,5 +59,9 @@ export class ExperienciaComponent implements OnInit {
       }
     })
     
+  }
+
+  drop(event: CdkDragDrop<string[]>) {
+    this.expe, event.previousIndex, event.currentIndex;
   }
 }
