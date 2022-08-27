@@ -6,7 +6,7 @@
             <p><em>Full Stack Developer Jr</em>
                 <div class="boton" *ngFor="let Descripcion of descripcion">
                     <p><em>{{Descripcion.descripcion}}</em></p>
-                    <i class="fa fa-pen" routerLink="/editdescp/{{Descripcion.id}}" *ngIf="isLogged"></i>
+                    <i class="fa fa-pen" style=" color: rgb(8, 27, 133)"routerLink="/editdescp/{{Descripcion.id}}" *ngIf="isLogged"></i>
                 </div>        
         </div>
         <hr>
