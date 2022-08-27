@@ -29,7 +29,7 @@ import { EditskillComponent } from './componentes/skill/editskill.component';
 import { NewskillComponent } from './componentes/skill/newskill.component';
 import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
 import { EditproyectoComponent } from './componentes/proyectos/editproyecto.component';
-
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -66,6 +66,7 @@ import { EditproyectoComponent } from './componentes/proyectos/editproyecto.comp
     }),
     HttpClientModule,
     FormsModule,
+    DragDropModule,
     
   ],
   providers: [

@@ -17,6 +17,17 @@
     -o-transform: scale(1.1);
 }
 
+.titulo{
+    justify-content: center;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline rgb(2, 14, 36);
+    text-underline-offset: 25%;
+}
+
 .card-img {
     display: block;
     overflow: hidden;
